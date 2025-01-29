@@ -1,0 +1,37 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Crie um programa que peça ao usuário para digitar dois números inteiros e
+        //exiba se a diferença entre eles é menor ou igual a 10.
+		  
+		 Console.WriteLine ("Digite um número inteiro (vamos exibir se a diferença entre ele e outro número é menor ou igual a 10): ");
+		 int numUm = int.Parse (Console.ReadLine());
+		 
+		 Console.WriteLine ("Digite outro número inteiro: ");
+		 int numDois = int.Parse (Console.ReadLine());
+		 
+		 if (numUm-numDois < 10) 
+		 {
+		 	Console.WriteLine("A diferença entre eles é menor que 10");
+		 }
+		 else if (numUm-numDois == 10) 
+		 {
+		 	Console.WriteLine("A diferença entre eles é 10");
+		 }
+		 else {
+		 	Console.WriteLine("A diferença entre eles não é menor ou igual a 10");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
