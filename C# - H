@@ -1,0 +1,33 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Crie um programa que peça ao usuário para digitar um número inteiro e exiba se ele é positivo ou negativo.
+		  
+		 Console.WriteLine ("Digite um número inteiro (vamos exibir se ele é positivo ou negativo): ");
+		 int num = int.Parse (Console.ReadLine());
+		 
+		 if (num < 0) 
+		 {
+		 	Console.WriteLine("Esse número é NEGATIVO");
+		 }
+		 else if (num > 0) 
+		 {
+		 	Console.WriteLine("Esse número é POSITIVO");
+		 }
+		 else {
+		 	Console.WriteLine("0 não é POSITIVO nem NEGATIVO");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
