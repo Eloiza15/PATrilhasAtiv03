@@ -1,0 +1,37 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Crie um programa que peça ao usuário para digitar dois números de ponto
+        //flutuante e exiba se o primeiro número é menor ou igual ao segundo número.
+		  
+		 Console.WriteLine ("Digite o primeiro número de ponto flutuante (vamos exibir se o primeiro número é menor ou igual ao segundo número): ");
+		 float numUm = float.Parse (Console.ReadLine());
+		 
+		 Console.WriteLine ("Digite o segundo número de ponto flutuante: ");
+		 float numDois = float.Parse (Console.ReadLine());
+		 
+		 if (numUm < numDois) 
+		 {
+		 	Console.WriteLine("O primeiro número é menor que o segundo número");
+		 }
+		 else if (numUm == numDois)
+		 {
+		 	Console.WriteLine("O primeiro número e o segundo número são iguais");
+		 }
+		 else {
+		 	Console.WriteLine("O primeiro número não é menor e nem igual ao segundo número");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
