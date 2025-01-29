@@ -1,0 +1,29 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		//Crie um programa que peça ao usuário para digitar um número de ponto flutuante e exiba se ele é igual a zero.
+		  
+		 Console.WriteLine ("Digite um número de ponto flutuante (vamos exibir se ele é igual a zero): ");
+		 double num = double.Parse (Console.ReadLine());
+		 
+		 if (num == 0) 
+		 {
+		 	Console.WriteLine("Esse número é igual a 0");
+		 }
+		 else {
+		 	Console.WriteLine("Esse número não é igual a 0");
+		 }
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
