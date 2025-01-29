@@ -1,0 +1,38 @@
+using System;
+
+namespace Exercicios
+{ 
+	class Program 
+	{
+		public static void Main()
+		{
+			
+		 //Crie um programa que peça ao usuário para digitar três números inteiros e
+         //exiba se o primeiro número é menor que o segundo número e maior que terceiro número.
+		  
+		 Console.WriteLine ("Digite o primeiro número inteiro (vamos exibir se o primeiro número é menor que o segundo número e maior que terceiro número): ");
+		 int numUm = Convert.ToInt16 (Console.ReadLine());
+		 
+		 Console.WriteLine ("Digite o segundo número inteiro: ");
+		 int numDois = Convert.ToInt16 (Console.ReadLine());
+		 
+		 Console.WriteLine ("Digite o terceiro número inteiro: ");
+		 int numTres = Convert.ToInt16 (Console.ReadLine());
+		 
+		 if (numUm < numDois && numUm > numTres) 
+		 {
+		 	Console.WriteLine("O primeiro número é menor que o segundo número e maior que terceiro número");
+		 }
+		 else
+		 {
+		 	Console.WriteLine("O primeiro número NÃO é menor que o segundo número e NÃO é maior que terceiro número (ao mesmo tempo)");
+		 }
+		 
+		 
+		 Console.WriteLine("");
+		 Console.Write("Pressione qualquer tecla para fechar..");
+		 Console.ReadKey(true);
+			
+		}
+	}
+}
